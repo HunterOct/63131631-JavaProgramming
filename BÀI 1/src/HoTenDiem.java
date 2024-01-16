@@ -8,7 +8,6 @@ public class HoTenDiem {
 		String hoten = scanner.nextLine();
 		System.out.print("Điêm:");
 		Float diem = scanner.nextFloat();
-		System.out.printf ("%s: %.3f",hoten,diem);
+		System.out.printf ("%s: %.1f Điểm",hoten,diem);
 	}
-
 }
