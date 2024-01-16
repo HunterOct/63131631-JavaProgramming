@@ -1,4 +1,4 @@
-<h1 align="center">Xin Chào 👋, Tôi là Hữu Tường</h1>
+<h1 align="center">☢ Hữu Tường</h1>
 <div align="center"> <img src=""> </div>
 <img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
 
