@@ -9,11 +9,19 @@ public class PTBac2 {
 		double b = scanner.nextDouble();
 		System.out.print("Nhập c:");
 		double c = scanner.nextDouble();
-		if (a==0)
+
+		if (a == 0) 
 		{
-			double x = -b/a;
-			System.out.printf("Nghiệm Của Phương trình bậc 1:%.1f",x);
-		}
+			if (b == 0) 
+	           {
+	               if (c == 0)
+	                  System.out.println("Phương trình có vô số nghiệm");
+	               else
+	                  System.out.println("Phương trình vô nghiệm");
+	           }
+	           else
+	        	   System.out.println("Phương trình có một nghiệm: " + (-c / b));
+	    }
 		else
 		{
 	        double delta = Math.pow(b, 2) - 4*a*c;
