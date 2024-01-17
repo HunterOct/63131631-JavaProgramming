@@ -2,7 +2,9 @@ import java.util.Scanner;
 public class PTBac1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập a:");
 		float a = scanner.nextFloat();
+		System.out.print("Nhập b:");
 		float b = scanner.nextFloat();
 		if(a == 0)
 		{
