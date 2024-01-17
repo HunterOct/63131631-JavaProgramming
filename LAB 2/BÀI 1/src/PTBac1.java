@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class PTBac1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
+		float a = scanner.nextFloat();
+		float b = scanner.nextFloat();
 		if(a == 0)
 		{
 			if(b == 0)
