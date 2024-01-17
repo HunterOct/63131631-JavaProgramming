@@ -14,7 +14,7 @@ public class chuvi {
 		canhmin = Math.min(chieudai, chieurong);
 		System.out.printf("Diện Tích :%d",dientich);
 		System.out.printf("\nChu Vi :%d",cvi);
-		System.out.printf("Cạnh Nhỏ Nhất :%d",canhmin);
+		System.out.printf("\nCạnh Nhỏ Nhất :%d",canhmin);
 	}
 
 }
