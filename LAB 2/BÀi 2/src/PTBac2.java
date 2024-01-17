@@ -41,8 +41,5 @@ public class PTBac2 {
 	        	System.out.printf("\nX2 = %.1f", x2);
 	        }
 		}
-		
-			
 	}
-
 }
