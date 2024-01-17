@@ -29,8 +29,8 @@ public class PTBac2 {
 	        	System.out.print("Phương trình có 2 nghiệm phân biệt !!!");
 	        	double x1 = (-b+(Math.sqrt(delta))/(2*a));
 	        	double x2 = (-b-(Math.sqrt(delta))/(2*a));
-	        	System.out.printf("X1 = %.1f", x1);
-	        	System.out.printf("X2 = %.1f", x2);
+	        	System.out.printf("\nX1 = %.1f", x1);
+	        	System.out.printf("\nX2 = %.1f", x2);
 	        }
 		}
 		
