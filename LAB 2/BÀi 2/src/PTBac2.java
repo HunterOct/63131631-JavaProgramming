@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class PTBac2 {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Nhập a:");
@@ -43,5 +42,4 @@ public class PTBac2 {
 	        }
 		}
 	}
-
 }
