@@ -5,6 +5,6 @@ public class ThetichHCN {
 		System.out.print("Nhập Cạnh Của khối lập Phương:");
 		int canh = scanner.nextInt();
 		double thetich = Math.pow(canh,3);
-		System.out.printf("Thể tích của khối lập phương: %f",thetich);
+		System.out.printf("Thể tích của khối lập phương: %.1f",thetich);
 	}
 }
