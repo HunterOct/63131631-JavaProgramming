@@ -8,7 +8,7 @@ public class PTBac1 {
 		{
 			if(b == 0)
 			{
-				System.out.print("Phương trình vô nghiệm !");
+				System.out.print("Phương trình vô Số nghiệm !");
 			}
 			else
 			{
