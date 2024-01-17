@@ -19,15 +19,15 @@ public class PTBac2 {
 		{
 	        double delta = Math.pow(b, 2) - 4*a*c;
 	        if (delta < 0)
-	        	System.out.print("Chương trình vô nghiệm !!!");
+	        	System.out.print("Phương trình vô nghiệm !!!");
 	        if (delta == 0)
 	        {
 	        	double x = -b/(2*a);
-	        	System.out.printf("Chương trình có nghiệm kép :%f",x);
+	        	System.out.printf("Phương trình có nghiệm kép :%f",x);
 	        }
 	        if (delta > 0)
 	        {
-	        	System.out.print("Chương trình có 2 nghiệm phân biệt !!!");
+	        	System.out.print("Phương trình có 2 nghiệm phân biệt !!!");
 	        	double x1 = (-b+(Math.sqrt(delta))/(2*a));
 	        	double x2 = (-b-(Math.sqrt(delta))/(2*a));
 	        	System.out.printf("X1 = %.1f", x1);
