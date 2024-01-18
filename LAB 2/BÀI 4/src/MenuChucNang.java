@@ -76,7 +76,14 @@ public class MenuChucNang {
 		}
 		else if (chucNang == 3)
 		{
-			
+			int tiendien;
+			System.out.print("Nhập Số Điện Sử Dụng:");
+			int sodien = scanner.nextInt();
+			if (sodien <= 50)
+				tiendien = sodien * 1000;
+			else
+				tiendien = 50 * 1000 + (sodien - 50) * 1200;
+			System.out.printf("Tiền Điện:"+tiendien);
 		}
 		else if (chucNang == 4)
 			System.exit(0);
