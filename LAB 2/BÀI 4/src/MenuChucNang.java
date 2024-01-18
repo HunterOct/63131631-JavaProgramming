@@ -12,6 +12,26 @@ public class MenuChucNang {
 		System.out.print("\n+---------------------------------------------------+");
 		System.out.print("\nChọn chức năng:");
 		chucNang = scanner.nextInt();
+		if (chucNang == 1)
+		{
+			System.out.print("Nhập a:");
+			double a = scanner.nextDouble();
+			System.out.print("Nhập b:");
+			double b = scanner.nextDouble();
+			if(a == 0)
+			{
+				if(b == 0)
+				{
+					System.out.print("Phương trình vô Số nghiệm !");
+				}
+				else
+				{
+					System.out.print("Phương trình vô nghiệm !");
+				}
+			}
+			double x = -b/a;
+			System.out.printf("Nghiệm Của Chương trình :%.1f",x);
+		}
 	}
 
 }
