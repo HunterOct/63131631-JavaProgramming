@@ -74,6 +74,12 @@ public class MenuChucNang {
 		        }
 			}
 		}
+		else if (chucNang == 3)
+		{
+			
+		}
+		else if (chucNang == 4)
+			System.exit(0);
 	}
 
 }
