@@ -7,7 +7,7 @@ public class TinhTienDien {
 		int tiendien;
 		System.out.print("Nhập Số Điện Sử Dụng:");
 		sodien = scanner.nextInt();
-		if (sodien >= 50)
+		if (sodien <= 50)
 			tiendien = sodien * 1000;
 		else
 			tiendien = 50 * 1000 + (sodien - 50) * 1200;
