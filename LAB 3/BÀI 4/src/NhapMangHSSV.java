@@ -10,11 +10,11 @@ public class NhapMangHSSV {
 			System.out.print("Nhập Số Lượng Sinh Viên:");
 			 n = scanner.nextInt();
 		}while(n<=0);
-		hoTen = new String[n];
-		diem = new int[n];
+
 		for (int i = 0 ;i<n;i++)
 		{
-			System.out.print("Nhập Tên Sinh Viên %d");
+			System.out.printf("Nhập Tên Sinh Viên Thứ: %d",i+1);
+			hoTen[i] = scanner.next();
 		}
 	}
 
