@@ -23,7 +23,7 @@ public class NhapMangXuatMang {
 			System.out.printf("A[%d] = %d\t",i, A[i]);
 		for (int i = 0;i<n;i++)
 			if (A[i] % 3 == 0)
-				s = (A[i] + A[i])/3;
-		System.out.printf("Trung bình cộng các số chia hết cho 3 là: %d", s);
+				s = s + A[i];
+		System.out.printf("Trung bình cộng các số chia hết cho 3 là: %d", s/3);
 	}
 }
