@@ -17,15 +17,15 @@ public class NhapMangHSSV {
     	for (int i = 0 ;i< 10;i++)
     	{
     		if (diem[i] < 5)
-                System.out.print("/nHọc Lực Yếu");
+                System.out.print("Học Lực Yếu");
     		else if (diem[i] >= 5 && diem[i]< 6.5)
-                System.out.print("/nHọc Lực Trung Bình");
+                System.out.print("Học Lực Trung Bình");
     		else if (diem[i] >= 6.5 && diem[i]< 7.5)
-                System.out.print("/nHọc Lực Khá");
+                System.out.print("Học Lực Khá");
     		else if (diem[i] >= 7.5 && diem[i]< 9)
-                System.out.print("/nHọc Lực Giỏi");
+                System.out.print("Học Lực Giỏi");
     		else if (diem[i] > 9)
-                System.out.print("/nHọc Lực Xuất Sắc");
+                System.out.print("Học Lực Xuất Sắc");
     	}
     }
     public static void main(String[] args) {
@@ -38,7 +38,11 @@ public class NhapMangHSSV {
         String[] hoTenSv = new String[n];
         double diemSv[] = new double[n];
         NhapHoTen(hoTenSv, diemSv, n);
-        
-        HocLuc(diemSv);
+        for(int i = 0;i<n;i++)
+        {
+        	System.out.printf("\nSinh Viên %s :",hoTenSv[i]);
+        	 HocLuc(diemSv);
+        }
+       
     }
 }
