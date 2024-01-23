@@ -17,17 +17,16 @@ public class NhapMangHSSV {
     	for (int i = 0 ;i< 10;i++)
     	{
     		if (diem[i] < 5)
-                System.out.print("/Học Lực Yếu");
+                System.out.print("/nHọc Lực Yếu");
     		else if (diem[i] >= 5 && diem[i]< 6.5)
-                System.out.print("/Học Lực Trung Bình");
+                System.out.print("/nHọc Lực Trung Bình");
     		else if (diem[i] >= 6.5 && diem[i]< 7.5)
-                System.out.print("/Học Lực Khá");
+                System.out.print("/nHọc Lực Khá");
     		else if (diem[i] >= 7.5 && diem[i]< 9)
-                System.out.print("/Học Lực Giỏi");
+                System.out.print("/nHọc Lực Giỏi");
     		else if (diem[i] > 9)
-                System.out.print("/Học Lực Xuất Sắc");
+                System.out.print("/nHọc Lực Xuất Sắc");
     	}
-
     }
     public static void main(String[] args) {
         int n = 0;
