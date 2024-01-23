@@ -12,21 +12,18 @@ public class NhapMangHSSV {
             scanner.nextLine();
         }
     }
-    public static void HocLuc(double diem[])
+    public static void HocLuc(double diem)
     {	
-    	for (int i = 0 ;i< 10;i++)
-    	{
-    		if (diem[i] < 5)
+    		if (diem < 5)
                 System.out.print("Học Lực Yếu");
-    		else if (diem[i] >= 5 && diem[i]< 6.5)
+    		else if (diem >= 5 && diem< 6.5)
                 System.out.print("Học Lực Trung Bình");
-    		else if (diem[i] >= 6.5 && diem[i]< 7.5)
+    		else if (diem >= 6.5 && diem< 7.5)
                 System.out.print("Học Lực Khá");
-    		else if (diem[i] >= 7.5 && diem[i]< 9)
+    		else if (diem >= 7.5 && diem< 9)
                 System.out.print("Học Lực Giỏi");
-    		else if (diem[i] > 9)
+    		else if (diem >= 9)
                 System.out.print("Học Lực Xuất Sắc");
-    	}
     }
     public static void main(String[] args) {
         int n = 0;
@@ -41,7 +38,7 @@ public class NhapMangHSSV {
         for(int i = 0;i<n;i++)
         {
         	System.out.printf("\nSinh Viên %s :",hoTenSv[i]);
-        	 HocLuc(diemSv);
+        	 HocLuc(diemSv[i]);
         }
        
     }
