@@ -19,7 +19,6 @@ public class NhapMangHSSV {
             System.out.print("Nhập Số Lượng Sinh Viên:");
             n = scanner.nextInt();
         } while (n <= 0);
-
         String[] hoTenSv = new String[n];
         double diemSv[] = new double[n];
         NhapHoTen(hoTenSv, diemSv, n);
