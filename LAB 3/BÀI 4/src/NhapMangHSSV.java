@@ -9,6 +9,7 @@ public class NhapMangHSSV {
             hoTen[i] = scanner.nextLine();
             System.out.printf("Nhập Điểm Sinh Viên Thứ %d:", i + 1);
             diem[i] = scanner.nextDouble();
+            scanner.nextLine();
         }
     }
 
