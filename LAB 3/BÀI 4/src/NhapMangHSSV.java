@@ -38,6 +38,7 @@ public class NhapMangHSSV {
         String[] hoTenSv = new String[n];
         double diemSv[] = new double[n];
         NhapHoTen(hoTenSv, diemSv, n);
+        
         HocLuc(diemSv);
     }
 }
