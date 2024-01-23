@@ -18,12 +18,12 @@ public class NhapMangXuatMang {
 			Min = Math.min(Min,A[i]);
 		System.out.printf("Phần Tử Nhỏ Nhất Trong mảng là:%d",Min);
 		Arrays.sort(A);
-		System.out.print("Mảng A sau khi được sắp xếp:\n");
+		System.out.print("\nMảng A sau khi được sắp xếp:\n");
 		for (int i=0;i<n;i++)
 			System.out.printf("A[%d] = %d\t",i, A[i]);
 		for (int i = 0;i<n;i++)
 			if (A[i] % 3 == 0)
 				s = s + A[i];
-		System.out.printf("Trung bình cộng các số chia hết cho 3 là: %d", s/3);
+		System.out.printf("\nTrung bình cộng các số chia hết cho 3 là: %d", s/3);
 	}
 }
