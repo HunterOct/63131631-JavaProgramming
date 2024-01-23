@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class NhapMangXuatMang {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -10,6 +11,10 @@ public class NhapMangXuatMang {
 			System.out.printf("Nhập A[%d]:",i+1);
 			A[i] = scanner.nextInt();
 		}
+		int Min = A[0];
+		for (int i=0;i<n;i++)
+			Min = Math.min(Min,A[i]);
+		System.out.printf("Phần Tử Nhỏ Nhất Trong mảng là:%d",Min);
 		
 	}
 }
