@@ -13,8 +13,9 @@ public class NhapMangHSSV {
 
 		for (int i = 0 ;i<n;i++)
 		{
-			System.out.printf("Nhập Tên Sinh Viên Thứ: %d",i+1);
-			hoTen[i] = scanner.next();
+			System.out.printf("Nhập Tên Sinh Viên Thứ %d:",i+1);
+            scanner.nextLine();
+			hoTen[i] = scanner.nextLine();
 		}
 	}
 
