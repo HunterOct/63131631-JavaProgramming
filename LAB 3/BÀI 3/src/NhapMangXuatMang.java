@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class NhapMangXuatMang {
@@ -15,6 +16,9 @@ public class NhapMangXuatMang {
 		for (int i=0;i<n;i++)
 			Min = Math.min(Min,A[i]);
 		System.out.printf("Phần Tử Nhỏ Nhất Trong mảng là:%d",Min);
-		
+		Arrays.sort(A);
+		System.out.print("Mảng A sau khi được sắp xếp:\n");
+		for (int i=0;i<n;i++)
+			System.out.printf("A[%d] = %d\t",i, A[i]);
 	}
 }
