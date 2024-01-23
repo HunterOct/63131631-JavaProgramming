@@ -7,6 +7,7 @@ public class NhapMangXuatMang {
 		System.out.print("Nhập Độ Dài Mảng A:");
 		int n = scanner.nextInt();
 		int A[] = new int[n];
+		int s = 0;
 		for(int i=0;i<n;i++)
 		{
 			System.out.printf("Nhập A[%d]:",i+1);
@@ -20,5 +21,9 @@ public class NhapMangXuatMang {
 		System.out.print("Mảng A sau khi được sắp xếp:\n");
 		for (int i=0;i<n;i++)
 			System.out.printf("A[%d] = %d\t",i, A[i]);
+		for (int i = 0;i<n;i++)
+			if (A[i] % 3 == 0)
+				s = (A[i] + A[i])/3;
+		System.out.printf("Trung bình cộng các số chia hết cho 3 là: %d", s);
 	}
 }
