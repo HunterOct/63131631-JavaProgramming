@@ -3,9 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hunteroct&label=Profile%20views&color=0e75b6&style=flat" alt="hunteroct" /> </p>
 
-- 👨‍💻 Mọi Project Của Tôi Đều Ở Đây [https://github.com/HunterOct](https://github.com/HunterOct)
+- [https://github.com/HunterOct](https://github.com/HunterOct)
 
-- 📫 Liên Hệ Tôi **hunter.19oct@gmail.com**
+- **hunter.19oct@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
