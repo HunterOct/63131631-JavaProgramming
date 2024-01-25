@@ -6,7 +6,6 @@ public class NguyenTo {
         Scanner scanner = new Scanner(System.in);
         int n;
         boolean nt = true;
-
         do {
             System.out.print("Nhập Một Số Nguyên:");
             n = scanner.nextInt();
