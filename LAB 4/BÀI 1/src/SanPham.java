@@ -8,8 +8,11 @@ public class SanPham {
 	public static void Nhap(String ten,double gia,double giamGia)
 	{
 		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập Tên Sản Phẩm:");
 		ten = scanner.next();
+		System.out.print("Nhập Giá Sản Phẩm:");
 		gia = scanner.nextDouble();
+		System.out.print("Nhập Phần Trăm Giảm Giá:");
 		giamGia = scanner.nextDouble();
 	}
 	public static void Xuat(String ten ,double gia,double giamgia) {
