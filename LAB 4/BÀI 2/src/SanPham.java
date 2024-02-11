@@ -10,7 +10,7 @@ public class SanPham {
 	public static void Nhap()
 	{
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Nhập Tên Sản Phẩm:");
+		System.out.print("\nNhập Tên Sản Phẩm:");
 		String ten = scanner.nextLine();
 		System.out.print("Nhập Giá Sản Phẩm:");
 		double gia = scanner.nextDouble();
@@ -30,7 +30,12 @@ public class SanPham {
 		System.out.printf("\n----------------------------------");
 	}
 	public static void main(String[] args) {
-		Nhap();
+		SanPham sp1 = new SanPham();
+		SanPham Sp2 = new SanPham();
+		System.out.printf("            Nhập Thông Tin Sản Phẩm 1");
+		sp1.Nhap();
+		System.out.printf("\n            Nhập Thông Tin Sản Phẩm 2");
+		sp1.Nhap();
 	}
 	
 
