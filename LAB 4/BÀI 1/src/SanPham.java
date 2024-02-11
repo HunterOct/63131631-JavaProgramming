@@ -5,15 +5,15 @@ public class SanPham {
 	{
 		return gia * 0.1;
 	}
-	public static void Nhap(String ten,double gia,double giamGia)
+	public static void Nhap()
 	{
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Nhập Tên Sản Phẩm:");
-		ten = scanner.next();
+		String ten = scanner.next();
 		System.out.print("Nhập Giá Sản Phẩm:");
-		gia = scanner.nextDouble();
+		double gia = scanner.nextDouble();
 		System.out.print("Nhập Phần Trăm Giảm Giá:");
-		giamGia = scanner.nextDouble();
+		double giamGia = scanner.nextDouble();
 	}
 	public static void Xuat(String ten ,double gia,double giamgia) {
 		System.out.printf("Tên Sản Phẩm: %s", ten);
@@ -23,10 +23,10 @@ public class SanPham {
 
 	}
 	public static void main(String[] args) {
-		String ten ;
-		double gia;
-		double giamGia;
-		Nhap(ten,gia,giamGia);
+		String ten = null ;
+		double gia = 0;
+		double giamGia = 0;
+		Nhap();
 		Xuat(ten,gia,giamGia);
 	}
 	
