@@ -28,8 +28,6 @@ public class SanPham {
 		System.out.printf("\nGiảm giá: %.1f %%", giamgia);
 		System.out.printf("\nThuế Nhập Khẩu: %s", dinhDangThue);
 		System.out.printf("\n----------------------------------");
-
-
 	}
 	public static void main(String[] args) {
 		Nhap();
