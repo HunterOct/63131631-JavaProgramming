@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class SanPham {
-	
 	public static double getThueNhapKhau(double gia)
 	{
 		return gia * 0.1;
