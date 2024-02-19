@@ -17,11 +17,11 @@ public class HOTEN {
 	}
 	public static void inDanhSach(ArrayList<String> danhsach)
 	{
-		System.out.print("Danh Sách Vừa Nhập:\n");
 		if (danhsach.isEmpty())
 			System.out.print("Chưa Có Tên Nào Trong Danh Sách !!!\n");
 		else
 		{
+			System.out.print("Danh Sách Vừa Nhập:\n");
 			for (String inDanhSach : danhsach)
 			{
 				System.out.printf(inDanhSach+"\n");
@@ -33,8 +33,15 @@ public class HOTEN {
 		Collections.shuffle(danhsach);
 		inDanhSach(danhsach);
 	}
-	private static void sapXepGiamDanVaXuat(ArrayList<String> danhSach) {
+	public static void sapXepGiamDanVaXuat(ArrayList<String> danhSach) {
         Collections.sort(danhSach, Collections.reverseOrder());
+        inDanhSach(danhSach);
+    }
+	private static void xoaHoTen( ArrayList<String> danhSach) {
+        System.out.print("Nhập họ tên cần xóa: ");
+        String hoTenCanXoa = scanner.nextLine();
+        danhSach.removeIf(hoTen -> hoTen.equalsIgnoreCase(hoTenCanXoa));
+        System.out.println("Danh sách sau khi xóa:");
         inDanhSach(danhSach);
     }
 	public static void main(String[] args) {
@@ -64,6 +71,7 @@ public class HOTEN {
 					sapXepGiamDanVaXuat(danhsach);
 					break;
 				case 5:
+					xoaHoTen(danhsach);
 					break;
 				case 6:
 					break;
