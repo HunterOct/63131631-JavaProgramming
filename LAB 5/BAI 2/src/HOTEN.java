@@ -24,7 +24,7 @@ public class HOTEN {
 		{
 			for (String inDanhSach : danhsach)
 			{
-			System.out.printf(inDanhSach+"\n");
+				System.out.printf(inDanhSach+"\n");
 			}
 		}
 	}
@@ -33,6 +33,10 @@ public class HOTEN {
 		Collections.shuffle(danhsach);
 		inDanhSach(danhsach);
 	}
+	private static void sapXepGiamDanVaXuat(ArrayList<String> danhSach) {
+        Collections.sort(danhSach, Collections.reverseOrder());
+        inDanhSach(danhSach);
+    }
 	public static void main(String[] args) {
 		ArrayList<String> danhsach = new ArrayList<>();
 		while (true)
@@ -57,6 +61,7 @@ public class HOTEN {
 					inDanhSachRand(danhsach);
 					break;
 				case 4:
+					sapXepGiamDanVaXuat(danhsach);
 					break;
 				case 5:
 					break;
