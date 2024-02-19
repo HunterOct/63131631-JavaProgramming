@@ -21,7 +21,6 @@ public class HOTEN {
 			System.out.print("Chưa Có Tên Nào Trong Danh Sách !!!\n");
 		else
 		{
-			System.out.print("Danh Sách Vừa Nhập:\n");
 			for (String inDanhSach : danhsach)
 			{
 				System.out.printf(inDanhSach+"\n");
@@ -31,10 +30,12 @@ public class HOTEN {
 	public static void inDanhSachRand(ArrayList<String> danhsach)
 	{
 		Collections.shuffle(danhsach);
+		System.out.print("Danh Sách Vừa Nhập:\n");
 		inDanhSach(danhsach);
 	}
 	public static void sapXepGiamDanVaXuat(ArrayList<String> danhSach) {
         Collections.sort(danhSach, Collections.reverseOrder());
+		System.out.print("Danh Sách Vừa Nhập:\n");
         inDanhSach(danhSach);
     }
 	private static void xoaHoTen( ArrayList<String> danhSach) {
@@ -62,6 +63,7 @@ public class HOTEN {
 					 nhapDanhSach(danhsach);
 					break;
 				case 2:
+					System.out.print("Danh Sách Vừa Nhập:\n");
 					inDanhSach(danhsach);
 					break;
 				case 3:
@@ -74,7 +76,10 @@ public class HOTEN {
 					xoaHoTen(danhsach);
 					break;
 				case 6:
-					break;
+					System.out.println("Kết thúc chương trình.");
+                    return;
+                default : 
+                	System.out.println("Kết thúc chương trình.");
 			}
 		}
 	}
