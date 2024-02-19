@@ -1,8 +1,34 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 public class HOTEN {
+	public static Scanner scanner = new Scanner(System.in);
+	public static void nhapDanhSach (ArrayList<String> danhsach)
+	{
+		while (true) {
+            System.out.print("Nhập Họ Tên: ");
+            String them = scanner.next();
+            danhsach.add(them);
+            System.out.print("Nhập thêm (Y/N)? ");
+            scanner.nextLine(); // consume the newline character
+            if (scanner.nextLine().equalsIgnoreCase("N")) {
+                break;
+            }
+        }
+	}
+	public static void inDanhSach(ArrayList<String> danhsach)
+	{
+		System.out.print("Danh Sách Vừa Nhập:\n");
+		if (danhsach.isEmpty())
+			System.out.print("Chưa Có Tên Nào Trong Danh Sách !!!\n");
+		else
+		{
+			for (String inDanhSach : danhsach)
+			{
+			System.out.printf(inDanhSach);
+			}
+		}
+	}
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
 		ArrayList<String> danhsach = new ArrayList<>();
 		while (true)
 		{
@@ -16,31 +42,10 @@ public class HOTEN {
 			switch (n)
 			{
 				case 1:
-					 while (true) {
-				            System.out.print("Nhập Họ Tên: ");
-				            String them = scanner.next();
-				            danhsach.add(them);
-				            System.out.print("Nhập thêm (Y/N)? ");
-				            scanner.nextLine(); // consume the newline character
-				            if (scanner.nextLine().equalsIgnoreCase("N")) {
-				                break;
-				            }
-				        }
+					 nhapDanhSach(danhsach);
 					break;
 				case 2:
-					System.out.print("Danh Sách Vừa Nhập:\n");
-						if (danhsach.isEmpty())
-						{
-							System.out.print("Chưa Có Tên Nào Trong Danh Sách !!!\n");
-							break;
-						}
-						else
-						{
-							for (String inDanhSach : danhsach)
-							{
-							System.out.printf(inDanhSach);
-							}
-						}
+					inDanhSach(danhsach);
 					break;
 				case 3:
 					break;
