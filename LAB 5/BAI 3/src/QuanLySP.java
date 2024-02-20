@@ -4,7 +4,17 @@ public class QuanLySP {
 	public static Scanner scanner = new Scanner(System.in);
 	public static void nhapSanPham (ArrayList<String> sanPham) 
 	{
-		
+		while ( true )
+		{
+			System.out.print("Nhập Sản Phẩm (Nhấn N để hủy):");
+			String nhapSP = scanner.nextLine();	
+			if(nhapSP.equalsIgnoreCase("N"))
+				break;
+			sanPham.add(nhapSP);
+			System.out.print("Nhập Giá Sản Phẩm (Nhấn N để hủy):");
+			double gia = scanner.nextDouble();
+			scanner.nextLine();
+		}
 	}
 	public static void sapXepSp(ArrayList<String> sanPham)
 	{
@@ -31,12 +41,16 @@ public class QuanLySP {
 			switch(n)
 			{
 				case 1 :
+					nhapSanPham(sanPham);
 					break;
 				case 2 :
+					sapXepSp(sanPham);
 					break;
 				case 3 :
+					xoaSp(sanPham);
 					break;
 				case 4 :
+					giaTrungBinh(sanPham);
 					break;
 				default : System.out.print("Không hợp lệ ,vui lòng chọn lại !!!!");
 			}
