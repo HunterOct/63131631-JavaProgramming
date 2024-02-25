@@ -37,7 +37,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ArrayList<SanPham> danhSachSanPham = new ArrayList<>();
 
-        // Nhập thông tin cho 5 sản phẩm
+  
         for (int i = 0; i < 5; i++) {
             System.out.println("Nhập thông tin cho sản phẩm " + (i + 1) + ":");
             System.out.print("Tên sản phẩm: ");
@@ -50,7 +50,7 @@ public class Main {
             danhSachSanPham.add(new SanPham(tenSp, donGia, hang));
         }
 
-        // Xuất thông tin các sản phẩm có hãng là Nokia
+
         System.out.println("\nCác sản phẩm có hãng là Nokia:");
         for (SanPham sp : danhSachSanPham) {
             if (sp.getHang().equalsIgnoreCase("Nokia")) {
