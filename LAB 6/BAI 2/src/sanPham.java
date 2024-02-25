@@ -1,8 +1,14 @@
 
 public class sanPham {
+	public void nhap(String tenSp,String hang,double donGia) {
+		
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String tenSp;
+		String hang;
+		double donGia;
+
 
 	}
 
