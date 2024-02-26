@@ -7,25 +7,27 @@ abstract class SinhVienPoly {
 		this.nganh = nganh;
 	}
 	public abstract double getDiem();
-	public void getHocLuc() {
+	public String getHocLuc() {
 		if(getDiem() < 5) {
-			System.out.print("Học Lực Yếu");
+            return "Yếu";
 		}
-		if(getDiem() >= 5 && getDiem()< 6.5) {
-			System.out.print("Học Lực Trung Bình");
+		else if(getDiem() >= 5 && getDiem()< 6.5) {
+            return "trung Bình";
 		}
-		if(getDiem() >= 6.5 && getDiem()< 7.5) {
-			System.out.print("Học Lực Khá");
+		else if(getDiem() >= 6.5 && getDiem()< 7.5) {
+            return "Khá";
 		}
-		if(getDiem() >= 7.5 && getDiem()< 9) {
-			System.out.print("Học Lực Giỏi");
+		else if(getDiem() >= 7.5 && getDiem()< 9) {
+            return "Khá";
 		}
-		if(getDiem() > 9) {
-			System.out.print("Học Lực Xuất Sắc");
-		}
+		else
+            return "Xuất sắc";
 	}
 	public void xuat() {
-	
+		System.out.println("Họ tên: " + hoTen);
+        System.out.println("Ngành: " + nganh);
+        System.out.println("Điểm: " + getDiem());
+        System.out.println("Học lực: " + getHocLuc());
 	}
 }
 public class Main {
