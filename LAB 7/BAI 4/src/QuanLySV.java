@@ -82,22 +82,55 @@ public class QuanLySV {
 
         scanner.close();
     }
-}
-private static void nhapDanhSachSinhVien(Scanner scanner) {
-    System.out.print("Nhập số lượng sinh viên: ");
-    int n = scanner.nextInt();
 
-    scanner.nextLine();
-
-    for (int i = 0; i < n; i++) {
-        System.out.println("\nNhập thông tin sinh viên thứ " + (i + 1) + ":");
-        System.out.print("Họ và tên: ");
-        String hoTen = scanner.nextLine();
-        System.out.print("Điểm: ");
-        double diem = scanner.nextDouble();
-
-        SinhVien sinhVien = new SinhVien(hoTen, diem);
-        danhSachSinhVien.add(sinhVien);
-    }
+	private static void nhapDanhSachSinhVien(Scanner scanner) {
+	    System.out.print("Nhập số lượng sinh viên: ");
+	    int n = scanner.nextInt();
+	
+	    scanner.nextLine();
+	
+	    for (int i = 0; i < n; i++) {
+	        System.out.println("\nNhập thông tin sinh viên thứ " + (i + 1) + ":");
+	        System.out.print("Họ và tên: ");
+	        String hoTen = scanner.nextLine();
+	        System.out.print("Điểm: ");
+	        double diem = scanner.nextDouble();
+	
+	        SinhVien sinhVien = new SinhVien(hoTen, diem);
+	        danhSachSinhVien.add(sinhVien);
+	    }
+	}
+	private static void xuatDanhSachSinhVien() {
+	    System.out.println("\n----- DANH SÁCH SINH VIÊN -----");
+	    for (SinhVien sv : danhSachSinhVien) {
+	        System.out.println("Họ và tên: " + sv.getHoTen());
+	        System.out.println("Điểm: " + sv.getDiem());
+	        System.out.println("Học lực: " + sv.getHocLuc());
+	        System.out.println("----------------------");
+	    }
+	}
+	
+	private static void xuatSinhVienHocLucGioi() {
+	    System.out.println("\n----- DANH SÁCH SINH VIÊN HỌC LỰC GIỎI -----");
+	    for (SinhVien sv : danhSachSinhVien) {
+	        if (sv.getHocLuc().equals("Xuất sắc")) {
+	            System.out.println("Họ và tên: " + sv.getHoTen());
+	            System.out.println("Điểm: " + sv.getDiem());
+	            System.out.println("Học lực: " + sv.getHocLuc());
+	            System.out.println("----------------------");
+	        }
+	    }
+	}
+	
+	private static void sapXepDanhSachSinhVienTheoDiem() {
+	    Collections.sort(danhSachSinhVien, Comparator.comparing(SinhVien::getDiem).reversed());
+	    System.out.println("\n----- DANH SÁCH SINH VIÊN SAU KHI SẮP XẾP THEO ĐIỂM -----");
+	    for (SinhVien sv : danhSachSinhVien) {
+	        System.out.println("Họ và tên: " + sv.getHoTen());
+	        System.out.println("Điểm: " + sv.getDiem());
+	        System.out.println("Học lực: " + sv.getHocLuc());
+	        System.out.println("----------------------");
+	    }
+	}
 }
   
