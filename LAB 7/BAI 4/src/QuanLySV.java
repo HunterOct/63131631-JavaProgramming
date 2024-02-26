@@ -83,5 +83,21 @@ public class QuanLySV {
         scanner.close();
     }
 }
+private static void nhapDanhSachSinhVien(Scanner scanner) {
+    System.out.print("Nhập số lượng sinh viên: ");
+    int n = scanner.nextInt();
 
+    scanner.nextLine();
+
+    for (int i = 0; i < n; i++) {
+        System.out.println("\nNhập thông tin sinh viên thứ " + (i + 1) + ":");
+        System.out.print("Họ và tên: ");
+        String hoTen = scanner.nextLine();
+        System.out.print("Điểm: ");
+        double diem = scanner.nextDouble();
+
+        SinhVien sinhVien = new SinhVien(hoTen, diem);
+        danhSachSinhVien.add(sinhVien);
+    }
+}
   
