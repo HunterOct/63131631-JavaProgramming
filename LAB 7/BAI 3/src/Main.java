@@ -30,7 +30,7 @@ abstract class SinhVienPoly {
         System.out.println("Học lực: " + getHocLuc());
 	}
 }
-abstract class SinhVienIT extends SinhVienPoly{
+class SinhVienIT extends SinhVienPoly{
 	private double diemJava;
 	private double diemHTML;
     private double diemCSS;
@@ -45,7 +45,7 @@ abstract class SinhVienIT extends SinhVienPoly{
     	return (2 * diemJava + diemHTML + diemCSS)/4 ;
     }
 }
-abstract class SinhVienBiz extends SinhVienPoly{
+ class SinhVienBiz extends SinhVienPoly{
 	protected double Mkt;
 	protected double sales;
 	public SinhVienBiz(String hoTen, String nganh, double mkt, double sales) {
@@ -62,8 +62,10 @@ abstract class SinhVienBiz extends SinhVienPoly{
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		SinhVienPoly Svit = new SinhVienIT("Hữu Tường", "Sofware Engineer", 9, 7, 5);
+        SinhVienPoly svbiz = new SinhVienBiz("Phạm Hạnh", "Sư Phạm", 6, 7);
+        Svit.xuat();
+        svbiz.xuat();
 	}
 
 }
