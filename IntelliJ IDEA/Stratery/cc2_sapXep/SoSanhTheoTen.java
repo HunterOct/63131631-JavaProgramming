@@ -1,7 +1,8 @@
 package Stratery.cc2_sapXep;
 
-public class SoSanhTheoTen {
-    int soSanh(SinhVIen o1, SinhVIen o2) {
-        return 0;
+public class SoSanhTheoTen implements iSoSanh<SinhVIen> {
+    @Override
+    public int soSanh(SinhVIen t1, SinhVIen t2) {
+        return t1.getHoTen().compareTo(t2.getHoTen());
     }
 }
