@@ -1,9 +1,9 @@
 package observer.BT.BT1;
 
+import observer.BT.BT1.Topic.I_TheoDoiNews;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import observer.BT.BT1.Topic.I_TheoDoiNews;
 
 public class ThanhvienB implements I_TheoDoiNews{
 

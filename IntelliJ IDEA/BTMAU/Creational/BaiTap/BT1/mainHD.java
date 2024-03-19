@@ -1,4 +1,4 @@
-package Creational.BaiTap.BT1;
+package BTMAU.Creational.BaiTap.BT1;
 
 public class mainHD {
     public static void main(String[] args) {

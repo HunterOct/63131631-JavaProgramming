@@ -1,8 +1,6 @@
 package strategy.BT.BT3;
 
 import java.util.ArrayList;
-// import java.util.Collections;
-// import java.util.Comparator;
 import java.util.List;
 
 public class QLSV {

@@ -1,4 +1,4 @@
-package Creational.singleton.Builder;
+package BTMAU.Creational.singleton.Builder;
 
 public class computer {
     private String CPU, RAM, hardDisk, Screen;

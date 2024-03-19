@@ -1,4 +1,4 @@
-package Template_method.BT;
+package BTMAU.Template_method.BT.BT2;
 
 public class SinhVienDB extends entityDB<SinhVien> {
     

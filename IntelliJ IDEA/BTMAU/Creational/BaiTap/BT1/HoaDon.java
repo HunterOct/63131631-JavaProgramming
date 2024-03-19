@@ -1,4 +1,4 @@
-package Creational.BaiTap.BT1;
+package BTMAU.Creational.BaiTap.BT1;
 
 import java.util.ArrayList;
 import java.util.List;
