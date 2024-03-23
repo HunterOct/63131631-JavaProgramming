@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/BTMAU/Template_method" />
       <excludeFolder url="file://$MODULE_DIR$/Builder" />
       <excludeFolder url="file://$MODULE_DIR$/Pizza" />
+      <excludeFolder url="file://$MODULE_DIR$/f88" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
