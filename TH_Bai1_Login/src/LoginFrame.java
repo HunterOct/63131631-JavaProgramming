@@ -59,7 +59,6 @@ public class LoginFrame extends JFrame {
 			}
 		});
 		btn_login.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btn_login.setBounds(171, 167, 178, 55);
 		contentPane.add(btn_login);
 	}
 	void XulyDangNhap() {

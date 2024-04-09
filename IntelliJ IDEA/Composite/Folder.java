@@ -23,7 +23,7 @@ public class Folder extends AbstractFile{
     @Override
     public String getStringTreeFolder() {
         StringBuilder builder = new StringBuilder();
-        builder.append(this.tenFile);
+        builder.append(this.tenFile).append("\t").append(this.ngayTao);
         for (AbstractFile f:childRen)
             builder.append("\n").append(f.getStringTreeFolder());
         return  builder.toString();
