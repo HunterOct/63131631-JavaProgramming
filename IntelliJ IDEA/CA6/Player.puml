@@ -1,0 +1,19 @@
+@startuml
+class PlayerData{
+    int thoiGian, coolDown, grade
+    }
+class DashBoard
+interface PlayerDataDetail{
+    + void listen(PlayerData)
+    }
+DashBoard --> PlayerData :Playerdata
+DashBoard ..|> PlayerDataDetail
+PlayerData --> PlayerDataDetail
+
+
+note right of PlayerData
+    subject
+    Các setter
+        Khi cập nhật xong giá trị thì gọi phương thức
+end note
+@enduml

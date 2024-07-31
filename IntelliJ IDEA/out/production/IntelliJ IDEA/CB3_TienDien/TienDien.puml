@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class TienDienBacThang{
+    + String tenBac
+    + int min,max,gia
+    + TienDienBacThang bacKeTiep(TienDienBacThang b)
+    + TinhTienDien(int soKW)
+}
+TienDienBacThang <|-- BacCaoNhat
+TienDienBacThang <|-- BacThongThuong
+TienDienBacThang <-- BacThongThuong : bacKeTiep
+
+note bottom of BacCaoNhat
+    Phương thức tính tiền điện
+        return (soKW - min) * gia
+end note
+note bottom of BacThongThuong
+    Phương thức tính tiền điện
+        Nếu soKWW <= max
+            return (soKW - min) * gia
+        Nguược lại
+            return (max - min) * gia + Tiền điện bậc kế tiếp
+end note
+@enduml

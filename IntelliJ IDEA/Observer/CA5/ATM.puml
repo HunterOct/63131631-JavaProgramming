@@ -1,0 +1,25 @@
+@startuml
+
+interface TaiKhoanObserver {
+  + bool kiemTraSoDu(int sotien)
+  + void nhanThongBao(int soTienRut,bool thanhcong)
+}
+
+class TaiKhoan {
+  int sodu
+  String tentk
+  + duaTheVaoATM()
+  + rutthekhoiATM()
+}
+
+class ATM {
+   + nhanthe(TaiKhoanATM atm)
+   + rathe((TaiKhoanATM atm)
+   + rutTien(int ruttien)
+}
+
+ATM ---> TaiKhoanObserver: Observer
+TaiKhoan ..|> TaiKhoanObserver: Subject
+TaiKhoan ---> ATM
+
+@enduml

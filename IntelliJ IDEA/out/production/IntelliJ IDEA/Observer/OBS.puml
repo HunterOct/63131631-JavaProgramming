@@ -1,0 +1,17 @@
+@startuml
+class NhaDauTuA{
+TiGia
+}
+class NhaDauTuB{
+TiGia
+}
+class TiGia{
+    List<TiGiaObserver> observer
+    + attach ()
+    + detach ()
+    +capNhatTiGia(float delta)
+}
+interface TiGiaObserver{
+    +update (float delta)
+}
+@enduml

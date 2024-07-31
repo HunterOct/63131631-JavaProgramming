@@ -1,0 +1,19 @@
+@startuml
+interface collection{
+    + Iterator createIterator()
+}
+interface Iterator {
+    + object first()
+    + object next()
+    + object current()
+    + boolean isdone()
+    }
+class ArrayCollection implements collection {
+    - int array[]
+    + int getitem(int i)
+    + int count()
+}
+class ArrayIterrator implements Iterator {
+}
+ArrayIterrator --> ArrayCollection
+@enduml

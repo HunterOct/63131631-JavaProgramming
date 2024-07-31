@@ -1,0 +1,33 @@
+@startuml
+class Mystream<T> {
+    + void listen(T t);
+    + void addListener(MyStreamListener listener);
+}
+class Client
+interface MystreamListener {
+    + void listen(T t);
+}
+class DataAccess {
+    - List<Monhoc> listen
+    + add (Monhoc m)
+    + delete (Monhoc m)
+}
+MystreamListener <|.. Client
+Mystream --> MystreamListener: listeners
+Client --> Mystream: stream
+DataAccess --> Mystream: stream
+note right of Mystream
+    subject
+    subject chứa một danh sách đại diện các obsever
+end note
+
+note right of Client
+    ConcreteObserver
+    ConcreteObserver chứa một tham chiếu tới subject
+end note
+
+note bottom of MystreamListener
+    interface để các observer implement
+end note
+
+@enduml

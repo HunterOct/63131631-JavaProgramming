@@ -1,0 +1,13 @@
+@startuml
+class Button{
+    int soLan;
+    + void Click()
+    + getSolan()
+}
+class Activity
+interface ButtonListener {
+    void onClick(Button button);
+}
+Activity --|> ButtonListener
+ButtonListener <-- Button
+@enduml

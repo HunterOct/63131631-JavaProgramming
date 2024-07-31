@@ -1,0 +1,40 @@
+@startuml
+abstract class ATM_TheoMenhGia{
+    - int menhGia
+    + {abstract} ATM_TheoMenhGia keTiep(ATM_TheoMenhGia k)
+    + {abstract} void RutTien(int soTien)
+}
+
+abstract class ChuoiMenhGiaFactory{
+    + {abstract} ATM_TheoMenhGia getChuoiMenhGia(int menhGia)
+    + void rutTien(int soTien,int menhGiaCaoNhat)
+}
+
+ATM_TheoMenhGia <|-- MenhGiaThapNhat
+ATM_TheoMenhGia <|-- MenhGia
+MenhGia --> ATM_TheoMenhGia : keTiep
+ChuoiMenhGiaFactory ..> ATM_TheoMenhGia
+ChuoiMenhGiaFactory <|-- ChuoiMenhGiaVND
+ChuoiMenhGiaVND *---> ATM_TheoMenhGia : m500 ,m100 ,m1...
+note bottom of MenhGiaThapNhat
+    Phương thức rút tiền:
+        Tính số tờ tiền và in ra số tờ
+end note
+note bottom of ChuoiMenhGiaVND
+    + Tạo các đối tượng ATM_TheoMenhGia theo mệnh giá tiền Việt Nam
+    + Kết nối cc đối tươnợng naày thành chuỗi trong phương thức khởi tạo
+    + Phương thức getChuoiMenhGia trả về đối tượng kiểu ATM_TheoMenhGia trong chuỗi giá trị đầu vào
+end note
+note bottom of ChuoiMenhGiaFactory
+    Phương thức rút tiền:
+       Gọi phương thức getChuoiMenhGia ---> chuoiMenhGia
+       Gọi phương thức RutTien trên đối tượng chuoiMenhGia
+end note
+note bottom of MenhGia
+    Phương thức rút tiền:
+        Tính số tờ: soTo = soTien / menhGia
+        Tính số dư: soDu = soTien % menhGia
+        Nếu số tờ > 0: in ra số tờ
+        Nếu số dư > 0: Chuyển số dư sang phần keTiep
+end note
+@enduml

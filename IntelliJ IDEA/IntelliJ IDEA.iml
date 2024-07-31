@@ -9,6 +9,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Pizza" />
       <excludeFolder url="file://$MODULE_DIR$/f88" />
       <excludeFolder url="file://$MODULE_DIR$/Ontap/Composite" />
+      <excludeFolder url="file://$MODULE_DIR$/CA1" />
+      <excludeFolder url="file://$MODULE_DIR$/CA6" />
+      <excludeFolder url="file://$MODULE_DIR$/Observer/CA5" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
